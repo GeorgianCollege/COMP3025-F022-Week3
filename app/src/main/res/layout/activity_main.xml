@@ -8,9 +8,9 @@
 
     <TableLayout
         android:id="@+id/Calculator_Table_Layout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,21 +18,21 @@
 
         <TableRow
             android:id="@+id/Result_Row"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/row_margin_left"
             android:layout_marginEnd="@dimen/row_margin_top"
             android:layout_marginBottom="@dimen/row_margin_bottom"
-            android:background="@drawable/border"
             android:gravity="end">
 
             <TextView
                 android:id="@+id/Result_TextView"
-                android:layout_width="@dimen/result_label_width"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/row_margin_right"
                 android:layout_span="4"
-                android:text="0"
+                android:background="@drawable/border"
+                android:paddingStart="@dimen/result_padding_left"
+                android:paddingEnd="@dimen/result_padding_right"
+                android:text="@string/initial_result_value"
                 android:textAlignment="textEnd"
                 android:textSize="@dimen/result_text_size" />
 
@@ -40,7 +40,6 @@
 
         <TableRow
             android:id="@+id/Top_Operator_Row"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/row_margin_left"
             android:layout_marginEnd="@dimen/row_margin_top"
@@ -51,6 +50,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="0"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/clear_button_red"
@@ -76,6 +76,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="2"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
@@ -88,6 +89,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="3"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
@@ -99,7 +101,6 @@
 
         <TableRow
             android:id="@+id/Top_Button_Row"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/row_margin_left"
             android:layout_marginEnd="@dimen/row_margin_top"
@@ -110,6 +111,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="0"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
@@ -137,6 +139,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="2"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
@@ -150,6 +153,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="3"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
@@ -161,7 +165,6 @@
 
         <TableRow
             android:id="@+id/Middle_Button_Row"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/row_margin_left"
             android:layout_marginEnd="@dimen/row_margin_top"
@@ -172,6 +175,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="0"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
@@ -199,6 +203,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="2"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
@@ -212,6 +217,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="3"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
@@ -224,7 +230,6 @@
 
         <TableRow
             android:id="@+id/Bottom_Button_Row"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/row_margin_left"
             android:layout_marginEnd="@dimen/row_margin_top"
@@ -235,6 +240,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="0"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
@@ -262,6 +268,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="2"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
@@ -275,6 +282,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="3"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
@@ -287,7 +295,6 @@
 
         <TableRow
             android:id="@+id/Bottom_Operator_Row"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/row_margin_left"
             android:layout_marginEnd="@dimen/row_margin_top"
@@ -298,13 +305,14 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="0"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/number_button_blue"
                 android:text="@string/zero_button"
                 android:textColor="@color/white"
                 android:textSize="@dimen/button_font_size"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
             <Button
                 android:id="@+id/Decimal_Button"
@@ -325,6 +333,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="2"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"
@@ -338,6 +347,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
+                android:layout_column="3"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginEnd="@dimen/button_margin_right"
                 android:backgroundTint="@color/operator_button_green"

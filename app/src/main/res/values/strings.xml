@@ -20,4 +20,5 @@
     <string name="zero_button">0</string>
     <string name="decimal_button">.</string>
     <string name="equals_button">=</string>
+    <string name="initial_result_value">0</string>
 </resources>
