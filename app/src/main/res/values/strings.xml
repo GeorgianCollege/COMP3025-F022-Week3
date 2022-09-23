@@ -9,4 +9,8 @@
     <string name="eight_button">8</string>
     <string name="nine_button">9</string>
     <string name="multiply_button">X</string>
+    <string name="four_button">4</string>
+    <string name="five_button">5</string>
+    <string name="six_button">6</string>
+    <string name="minus_button">-</string>
 </resources>
