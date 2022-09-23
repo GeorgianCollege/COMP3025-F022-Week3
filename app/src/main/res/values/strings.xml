@@ -17,4 +17,7 @@
     <string name="two_button">2</string>
     <string name="three_value">3</string>
     <string name="plus_button">+</string>
+    <string name="zero_button">0</string>
+    <string name="decimal_button">.</string>
+    <string name="equals_button">=</string>
 </resources>
