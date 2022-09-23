@@ -92,5 +92,62 @@
 
         </TableRow>
 
+        <TableRow
+            android:id="@+id/Top_Button_Row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/row_margin_left">
+
+            <Button
+                android:id="@+id/Seven_Button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_margin_left"
+                android:layout_marginEnd="@dimen/button_margin_right"
+                android:backgroundTint="@color/number_button_blue"
+                android:text="@string/seven_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_font_size" />
+
+            <Button
+                android:id="@+id/Eight_Button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/button_margin_left"
+                android:layout_marginEnd="@dimen/button_margin_right"
+                android:backgroundTint="@color/number_button_blue"
+                android:text="@string/eight_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_font_size" />
+
+            <Button
+                android:id="@+id/Nine_Button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_margin_left"
+                android:layout_marginEnd="@dimen/button_margin_right"
+                android:backgroundTint="@color/number_button_blue"
+                android:text="@string/nine_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_font_size" />
+
+            <Button
+                android:id="@+id/Multiply_Button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_margin_left"
+                android:layout_marginEnd="@dimen/button_margin_right"
+                android:backgroundTint="@color/operator_button_green"
+                android:text="@string/multiply_button"
+                android:textColor="@color/black"
+                android:textSize="@dimen/button_font_size" />
+
+        </TableRow>
+
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

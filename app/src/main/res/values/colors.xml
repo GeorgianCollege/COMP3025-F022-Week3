@@ -10,4 +10,5 @@
     <color name="backspace_orange">#FFB253</color>
     <color name="clear_button_red">#FF3823</color>
     <color name="operator_button_green">#72BB53</color>
+    <color name="number_button_blue">#75a9f9</color>
 </resources>

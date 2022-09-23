@@ -5,4 +5,8 @@
     <string name="percent_button">%</string>
     <string name="divide_button">/</string>
     <string name="backspace_button">&lt;--</string>
+    <string name="seven_button">7</string>
+    <string name="eight_button">8</string>
+    <string name="nine_button">9</string>
+    <string name="multiply_button">X</string>
 </resources>
