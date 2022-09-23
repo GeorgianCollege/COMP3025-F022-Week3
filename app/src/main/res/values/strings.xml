@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">COMP3025-F2022-Week3</string>
+    <string name="clear_button">C</string>
+    <string name="plus_minus_button">+/-</string>
+    <string name="percent_button">%</string>
+    <string name="divide_button">/</string>
+    <string name="backspace_button">&lt;--</string>
 </resources>

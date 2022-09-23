@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
 
         findViewById<Button>(R.id.Clear_Button).setOnClickListener { view -> OperatorButtons(view) }
-        findViewById<Button>(R.id.Plus_Minus_Button).setOnClickListener { view -> OperatorButtons(view) }
+        //findViewById<Button>(R.id.Plus_Minus_Button).setOnClickListener { view -> OperatorButtons(view) }
         findViewById<Button>(R.id.Percent_Button).setOnClickListener { view -> OperatorButtons(view) }
         findViewById<Button>(R.id.Divide_Button).setOnClickListener { view -> OperatorButtons(view) }
     }

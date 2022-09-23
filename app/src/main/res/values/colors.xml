@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="backspace_orange">#FFB253</color>
+    <color name="clear_button_red">#FF3823</color>
+    <color name="operator_button_green">#72BB53</color>
 </resources>

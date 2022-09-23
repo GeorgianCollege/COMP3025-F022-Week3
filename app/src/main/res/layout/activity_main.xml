@@ -20,56 +20,77 @@
             android:id="@+id/Result_Row"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/row_margin_left"
             android:gravity="end">
 
             <TextView
                 android:id="@+id/Result_TextView"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/result_label_width"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
+                android:layout_marginEnd="@dimen/row_margin_right"
+                android:layout_span="4"
                 android:text="0"
-                android:textAlignment="viewEnd"
-                android:textSize="48sp" />
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/result_text_size" />
 
         </TableRow>
 
         <TableRow
             android:id="@+id/Top_Operator_Row"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/row_margin_left">
 
             <Button
                 android:id="@+id/Clear_Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Clear" />
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_margin_left"
+                android:layout_marginEnd="@dimen/button_margin_right"
+                android:backgroundTint="@color/clear_button_red"
+                android:text="@string/clear_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_font_size" />
 
             <Button
-                android:id="@+id/Plus_Minus_Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+/-" />
+                android:id="@+id/Backspace_Button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/button_margin_left"
+                android:layout_marginEnd="@dimen/button_margin_right"
+                android:backgroundTint="@color/backspace_orange"
+                android:text="@string/backspace_button"
+                android:textColor="@color/black"
+                android:textSize="@dimen/button_font_size" />
 
             <Button
                 android:id="@+id/Percent_Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="%" />
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_margin_left"
+                android:layout_marginEnd="@dimen/button_margin_right"
+                android:backgroundTint="@color/operator_button_green"
+                android:text="@string/percent_button"
+                android:textColor="@color/black"
+                android:textSize="@dimen/button_font_size" />
 
             <Button
                 android:id="@+id/Divide_Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="/" />
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_margin_left"
+                android:layout_marginEnd="@dimen/button_margin_right"
+                android:backgroundTint="@color/operator_button_green"
+                android:text="@string/divide_button"
+                android:textColor="@color/black"
+                android:textSize="@dimen/button_font_size" />
 
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
