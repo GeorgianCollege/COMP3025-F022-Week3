@@ -213,5 +213,66 @@
 
         </TableRow>
 
+        <TableRow
+            android:id="@+id/Bottom_Button_Row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/row_margin_left">
+
+            <Button
+                android:id="@+id/One_Button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_margin_left"
+                android:layout_marginEnd="@dimen/button_margin_right"
+                android:backgroundTint="@color/number_button_blue"
+                android:text="@string/one_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_font_size"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/Two_Button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/button_margin_left"
+                android:layout_marginEnd="@dimen/button_margin_right"
+                android:backgroundTint="@color/number_button_blue"
+                android:text="@string/two_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_font_size"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/Three_Button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_margin_left"
+                android:layout_marginEnd="@dimen/button_margin_right"
+                android:backgroundTint="@color/number_button_blue"
+                android:text="@string/three_value"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_font_size"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/Plus_Button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_margin_left"
+                android:layout_marginEnd="@dimen/button_margin_right"
+                android:backgroundTint="@color/operator_button_green"
+                android:text="@string/plus_button"
+                android:textColor="@color/black"
+                android:textSize="@dimen/button_font_size"
+                tools:ignore="TextContrastCheck" />
+
+        </TableRow>
+
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

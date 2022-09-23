@@ -13,4 +13,8 @@
     <string name="five_button">5</string>
     <string name="six_button">6</string>
     <string name="minus_button">-</string>
+    <string name="one_button">1</string>
+    <string name="two_button">2</string>
+    <string name="three_value">3</string>
+    <string name="plus_button">+</string>
 </resources>
